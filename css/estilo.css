@@ -1,0 +1,290 @@
+body {
+/* Movimiento vertical */	
+	margin-left: 0px; 
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+	
+#fv{
+	background: url(../img/fondov.png) no-repeat;
+	width:745px;
+	height:532px;	
+	}
+
+#ver {
+    width: 290px;
+    height: 236px;
+	position:relative;
+	left: 450px;
+	top: 30px;
+    background: url(../img/ver.png) no-repeat bottom;
+}
+
+#ver:hover {
+    height: 425px;
+	-webkit-transition: height 3s;
+    transition: height 3s;
+}
+#patch{
+	background:url(../img/patch.jpg) no-repeat;
+	left:450px;
+	top:0px;
+	z-index:2;
+	position: absolute;
+	height:120px;
+	width:15px;
+	}  
+
+#pf5,#pf6,#pf4,#pf3,#pf2,#pf9,#pf10,#pf11,#pf12{ 
+	position:relative;
+	width:745px;
+	height:532px;
+	margin:0 auto;
+}
+#pf9{ 
+	background:url(../img/07A.jpg) no-repeat;
+}
+#pf10{ 
+	background:url(../img/08.jpg) no-repeat;
+}
+#pf11{ 
+	background:url(../img/09.jpg) no-repeat;
+}
+#pf12{ 
+	background:url(../img/10.jpg) no-repeat;	
+}
+#pf2{ 
+	background:url(../img/01.jpg) no-repeat;
+}
+#pf3{ 
+	background:url(../img/02.jpg) no-repeat;
+}
+#pf4{ 
+	background:url(../img/03.jpg) no-repeat;
+}
+
+#pf5{ 
+	background:url(../img/04.jpg) no-repeat;
+}
+	
+#pf6{ 
+	background:url(../img/05.jpg) no-repeat;
+}
+	
+	/* Movimiento inclinado izq-der */
+
+#fid{
+	background:url(../img/fid.png) no-repeat;
+	height:532px;
+	width:745px;
+	}
+#izde {
+    width: 240px;
+    height: 240px;
+	position:relative;
+    background:url(../img/id.png) no-repeat bottom right;
+	left:360px;
+	top:-30px;
+}
+
+#izde:hover {
+    width: 385px;
+    height: 385px;
+	-webkit-transition: height 3s, width 3s;
+    transition: width 3s, height 3s;
+}	
+
+/* Movimiento inclinado der-izq */
+
+#esp{
+	width:745px;
+	height:532px;
+	background:url(../img/fdi.png) no-repeat;		
+	}
+#deiz {
+	position:relative;
+    width: 265px;
+    height: 262px;
+    background: url(../img/di.png) no-repeat bottom left;
+	left: 475px;
+	top: 8px;
+}
+
+div#deiz:hover {
+    width: 465px;
+    height: 462px;
+	-webkit-transition: width 2s, height 2s, left 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, left 2s;
+	left: 275px
+}
+
+#patch2{
+	background:url(../img/patch2.png) no-repeat;
+	left:615px;
+	top:0px;
+	z-index:2;
+	position: absolute;
+	height:118px;
+	width:130px;
+	}
+
+/* Movimiento horizontal */
+
+#fh{
+	background: url(../img/hor.png) no-repeat;
+	width:745px;
+	height:532px;	
+	}
+#hor {
+    width: 210px;
+    height: 180px;
+    background: url(../img/mano.png) no-repeat right;
+	top:200px;
+	left:130px;
+	position:relative;
+}
+
+#hor:hover {
+    width: 600px;
+	-webkit-transition: width 3s; /* For Safari 3.1 to 6.0 */
+    transition: width 3s;
+}
+
+#pf7{ 
+position:relative;
+	width:745px;
+	height:532px;
+	margin:0 auto;
+background:url(../img/06.jpg) no-repeat;
+}
+
+#pf8{ 
+position:relative;
+	width:745px;
+	height:532px;
+	margin:0 auto;
+background:url(../img/07_.jpg) no-repeat;
+}
+
+/* CODIGO TIO */
+	
+#todo{
+	position:relative;
+	background:url(../img/fondo.jpg);
+	width:745px;
+	height:532px;
+	margin-left: 0px; 
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}	
+	
+#pantalla1{
+	position: absolute;
+	z-index: 1;
+	width: 580px;
+	top: 42px;
+	height: 52px;
+	left: 103px;
+	font-family: "Century Gothic";
+	color: #060;
+	}
+		
+#pantalla2, #pantalla3, #pantalla4, #pantalla5, #pantalla6, #pantalla7, #pantalla8, #pantalla9, #pantalla10, #pantalla11, #pantalla12, #pantalla13, #pantalla14{
+	position:absolute;
+	display:none;
+	}					
+	
+#inicio{
+	position: absolute;
+	background: url(../img/play.png) no-repeat;
+	width: 350px;
+	height: 332px;
+	left: 105px;
+	top: 69px;
+	cursor: pointer;
+	}
+	
+#inicio:hover{
+	background:url(../img/play_2.png) no-repeat;
+    }
+		
+.boton_atras{
+	position:absolute;
+	width:96px;
+	height:40px;
+	background:url(../img/btn_atras.png) no-repeat;
+	cursor:pointer;
+	text-align:center;
+	line-height:17px;
+	}	
+	
+.boton_atras:hover{
+	background:url(../img/btn_atras_hover.png);
+	}
+	
+.boton_adelante{
+	position:absolute;
+	width:130px;
+	height:40px;
+	background:url(../img/btn_adelante.png) no-repeat;
+	cursor:pointer;
+	text-align:center;
+	line-height:17px;
+	}	
+	
+.boton_adelante:hover{
+	background:url(../img/btn_adelante_hover.png);
+	}
+	
+.boton_rebobinar{
+	position:absolute;
+	width:96px;
+	height:40px;
+	background:url(../img/btn_rebobinar.png) no-repeat;
+	cursor:pointer;
+	text-align:center;
+	line-height:17px;
+	}	
+	
+.boton_rebobinar:hover{
+	background:url(../img/btn_rebobinar_hover.png);
+	}					
+	
+#regresa1, #regresa2, #regresa3, #regresa4, #regresa5, #regresa6, #regresa7, #regresa8, #regresa9, #regresa10, #regresa11, #regresa12, #regresa13{
+	position:absolute;
+	left:40px;
+	top:430px;
+	z-index:5;
+	}	
+	
+#avanza1, #avanza2, #avanza3, #avanza4, #avanza5, #avanza6, #avanza7, #avanza8, #avanza9, #avanza10, #avanza11, #avanza12, #avanza13{
+	position:absolute;
+	left:595px;
+	top:430px;
+	z-index:5;
+	}
+
+/* Función mov círculo */
+
+#capa{
+	position: absolute;
+	width: 245px;
+	height: 200px;
+	left: 252px;
+	top: 8px;
+	background: url(../img/manocir.png) no-repeat;
+	z-index:3;
+	}
+
+
+#cir{
+	position: absolute;
+	width: 252px;
+	height: 251px;
+	background: url(../img/circulo.png) no-repeat left top;
+	left: 128px;
+	top: 171px;
+	z-index:2;
+}

@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pagina nueva 2</title>
+</head>
+<style>
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background:url(fondo.jpg) no-repeat;
+}
+div#capa{
+	position: absolute;
+	width: 245px;
+	height: 200px;
+	z-index: 1;
+	left: 502px;
+	top: 8px;
+	background: url(mano.png) no-repeat;
+	}
+
+
+div#cir{
+	position: absolute;
+	width: 252px;
+	height: 251px;
+	background: url(circulo.png) no-repeat left top;
+	left: 378px;
+	top: 171px;
+}
+</style>
+<script language=javascript>
+
+//definimos la variable que incrementará el valor de un ángulo que parte de 0
+var valor=-1.5;
+function girar(){
+
+//Incremento progresivo del ángulo con valor 0.04; el valor 0.04 establece la precisión del movimiento. A mayor valor, menor precisión. Si damos un valor muy alto, el movimiento irá a "saltos"
+valor=valor+0.02;
+
+//Generamos valores de seno y coseno de la variable valor
+posicion=Math.cos(valor);
+posicioncos=Math.sin(valor);
+
+// Asignamos las fórmulas anteriores a dos variables que establecerán
+// los movimientos horizontal y vertical
+posicion1=(posicion*122)+499;
+posicion2=(posicioncos*122)+129;
+
+//Asignamos las variables anteriores a las posiciones left (horizontal) y top (vertical)
+capa.style.left=posicion1+'px';
+capa.style.top=posicion2+'px';
+//Hacemos que la función se repita una y otra vez cada 10 milisegundos
+
+setTimeout('girar()',40);
+
+}
+
+
+
+
+
+</script>
+
+<body>
+
+<div id="capa" onMouseOver="girar()" onMouseOut="girarf()" >
+</div>
+<div id="cir"></div>
+
+
+</body>
+
+</html>
